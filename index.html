@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Travel Blog</title>
+  <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+  <header>
+    <h1>Wanderlust Diaries</h1>
+    <p>Your Daily Dose of Travel Adventures</p>
+  </header>
+
+  <nav id="navbar">
+    <div class="logo">Wanderlust</div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="hamburger" onclick="document.getElementById('navbar').classList.toggle('active')">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <main>
+      <h2>Latest Adventures</h2>
+      <p>Join us as we explore hidden gems around the globe and share exciting travel stories, tips, and stunning photography.</p>
+
+      <section class="gallery">
+        <picture>
+          <source srcset="assets/himalayas.webp" type="image/webp">
+          <source srcset="assets/himalayas.jpg 1x, assets/himalayas.jpg 2x" type="image/jpeg">
+          <img src="assets/himalayas.jpg" alt="Place 1">
+        </picture>
+        <picture>
+          <source srcset="assets/pexels-miki-czetti-26377-111963.webp" type="image/webp">
+          <source srcset="assets/pexels-miki-czetti-26377-111963.jpg 1x, assets/pexels-miki-czetti-26377-111963.jpg 2x" type="image/jpeg">
+          <img src="assets/pexels-miki-czetti-26377-111963.jpg" alt="Place 2">
+        </picture>
+        <picture>
+          <source srcset="assets/pexels-pixabay-237272.webp" type="image/webp">
+          <source srcset="assets/pexels-pixabay-237272.jpg 1x, assets/pexels-pixabay-237272.jpg 2x" type="image/jpeg">
+          <img src="assets/pexels-pixabay-237272.jpg" alt="Place 3">
+        </picture>
+        <picture>
+          <source srcset="assets/pexels-souvenirpixels-1531660.webp" type="image/webp">
+          <source srcset="assets/pexels-souvenirpixels-1531660.jpg 1x, assets/pexels-souvenirpixels-1531660.jpg 2x" type="image/jpeg">
+          <img src="assets/pexels-souvenirpixels-1531660.jpg" alt="Place 4">
+        </picture>
+      </section>
+
+      <section class="info-form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </section>
+    </main>
+
+    <aside>
+      <h3>Travel Tips</h3>
+      <p>Get the best hacks to save money and travel smarter.</p>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Wanderlust Diaries | Follow us on social media</p>
+  </footer>
+</body>
+</html>
